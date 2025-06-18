@@ -1,70 +1,108 @@
-# Getting Started with Create React App
+# Trang Web Cơ Bản với Tailwind CSS
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Đây là một trang web cơ bản được tạo bằng React và Tailwind CSS với thiết kế hiện đại và responsive.
 
-## Available Scripts
+## Tính năng
 
-In the project directory, you can run:
+- 🎨 **Thiết kế hiện đại**: Giao diện đẹp mắt với gradient và shadow
+- 📱 **Responsive**: Tương thích hoàn hảo trên mọi thiết bị
+- ⚡ **Hiệu suất cao**: Tối ưu hóa với React và Tailwind CSS
+- 🎯 **UX tốt**: Trải nghiệm người dùng mượt mà với smooth scrolling
+- 🎭 **Animations**: Hiệu ứng hover và transition đẹp mắt
 
-### `npm start`
+## Cấu trúc trang web
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 1. Header
+- Logo và navigation menu
+- Responsive mobile menu
+- Smooth scrolling navigation
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 2. Hero Section
+- Tiêu đề chính với gradient text
+- Mô tả ngắn gọn
+- Call-to-action buttons
 
-### `npm test`
+### 3. Features Section
+- 3 tính năng nổi bật với icons
+- Layout grid responsive
+- Hover effects
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 4. Services Section
+- Danh sách dịch vụ
+- Card layout với shadow effects
+- Interactive buttons
 
-### `npm run build`
+### 5. Contact Section
+- Form liên hệ đầy đủ
+- Input fields với focus states
+- Responsive grid layout
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 6. Footer
+- Thông tin công ty
+- Links navigation
+- Contact information
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Công nghệ sử dụng
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **React 19.1.0**: Framework JavaScript hiện đại
+- **Tailwind CSS 3.4.17**: Utility-first CSS framework
+- **PostCSS**: CSS processor
+- **Autoprefixer**: CSS vendor prefixing
 
-### `npm run eject`
+## Cài đặt và chạy
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. **Cài đặt dependencies:**
+   ```bash
+   npm install
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2. **Chạy development server:**
+   ```bash
+   npm start
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+3. **Build cho production:**
+   ```bash
+   npm run build
+   ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Cấu hình Tailwind CSS
 
-## Learn More
+File cấu hình: `tailwind.config.js`
+- Responsive breakpoints
+- Custom colors và spacing
+- Plugin configurations
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Custom CSS
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+File: `src/styles/main.css`
+- Custom scrollbar styling
+- Smooth scrolling
+- Custom animations
+- Hover effects
+- Utility classes
 
-### Code Splitting
+## Responsive Design
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- **Mobile**: < 768px
+- **Tablet**: 768px - 1024px  
+- **Desktop**: > 1024px
 
-### Analyzing the Bundle Size
+## Browser Support
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- Chrome (latest)
+- Firefox (latest)
+- Safari (latest)
+- Edge (latest)
 
-### Making a Progressive Web App
+## Tùy chỉnh
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Bạn có thể dễ dàng tùy chỉnh:
+- Màu sắc trong `tailwind.config.js`
+- Layout trong `src/App.jsx`
+- Styles trong `src/styles/main.css`
+- Content và text
 
-### Advanced Configuration
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+MIT License - Tự do sử dụng và chỉnh sửa.

@@ -1,0 +1,174 @@
+/* Component-specific styles */
+
+/* Button variants */
+.btn-group {
+  @apply flex flex-col sm:flex-row gap-4;
+}
+
+.btn-group-vertical {
+  @apply flex flex-col gap-2;
+}
+
+.btn-group-horizontal {
+  @apply flex flex-row gap-2;
+}
+
+/* Card variants */
+.card-hover {
+  @apply transition-all duration-300 hover:shadow-lg hover:-translate-y-1;
+}
+
+.card-interactive {
+  @apply cursor-pointer transition-all duration-200 hover:shadow-md;
+}
+
+/* Form styles */
+.form-group {
+  @apply space-y-6;
+}
+
+.form-row {
+  @apply grid md:grid-cols-2 gap-6;
+}
+
+.form-actions {
+  @apply flex justify-center gap-4;
+}
+
+/* Layout utilities */
+.section-header {
+  @apply text-center mb-16;
+}
+
+.section-title {
+  @apply text-3xl md:text-4xl font-bold text-gray-900 mb-4;
+}
+
+.section-subtitle {
+  @apply text-xl text-gray-600;
+}
+
+.grid-responsive {
+  @apply grid md:grid-cols-2 lg:grid-cols-3 gap-8;
+}
+
+.grid-features {
+  @apply grid md:grid-cols-3 gap-8;
+}
+
+/* Navigation */
+.nav-link {
+  @apply text-gray-700 hover:text-blue-600 transition-colors;
+}
+
+.nav-link-active {
+  @apply text-blue-600 font-semibold;
+}
+
+/* Hero section */
+.hero-content {
+  @apply text-center;
+}
+
+.hero-title {
+  @apply text-4xl md:text-6xl font-bold text-gray-900 mb-6;
+}
+
+.hero-subtitle {
+  @apply text-xl text-gray-600 mb-8 max-w-3xl mx-auto;
+}
+
+/* Feature card */
+.feature-icon {
+  @apply w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4;
+}
+
+.feature-title {
+  @apply text-xl font-semibold text-gray-900 mb-2;
+}
+
+.feature-description {
+  @apply text-gray-600;
+}
+
+/* Service card */
+.service-card {
+  @apply bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow;
+}
+
+.service-title {
+  @apply text-xl font-semibold text-gray-900 mb-3;
+}
+
+.service-description {
+  @apply text-gray-600 mb-4;
+}
+
+.service-link {
+  @apply text-blue-600 hover:text-blue-700 font-semibold transition-colors;
+}
+
+/* Footer */
+.footer-section {
+  @apply space-y-2;
+}
+
+.footer-title {
+  @apply font-semibold mb-4;
+}
+
+.footer-link {
+  @apply text-gray-400 hover:text-white transition-colors;
+}
+
+/* Animations */
+.animate-fade-in {
+  animation: fadeIn 0.6s ease-out;
+}
+
+.animate-slide-up {
+  animation: slideUp 0.6s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive utilities */
+.mobile-only {
+  @apply md:hidden;
+}
+
+.desktop-only {
+  @apply hidden md:block;
+}
+
+/* Focus states */
+.focus-ring {
+  @apply focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2;
+}
+
+/* Hover effects */
+.hover-lift {
+  @apply transition-transform duration-200 hover:-translate-y-1;
+}
+
+.hover-scale {
+  @apply transition-transform duration-200 hover:scale-105;
+}
